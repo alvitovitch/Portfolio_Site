@@ -2169,9 +2169,12 @@ input, select, textarea {
 	}
 
 	#whet {
-		margin-top: 100px;
-		margin-bottom: 100px;
 		color: orangered;
+		align-self: center;
+		display: flex;
+		width: 100%;
+		justify-content: center;
+		margin-bottom: 5%;
 	}
 
 	#footer-wrapper {

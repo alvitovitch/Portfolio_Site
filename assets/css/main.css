@@ -1758,6 +1758,12 @@ input, select, textarea {
 		border: 0;
 	}
 
+	.projectPic{
+		border-radius: 15px;
+		box-shadow: 2px 2px 3px 2px #ffae00b1;
+		border: rgba(0, 0, 0, 0.415) solid 1px;
+	}
+
 		.image img {
 			display: block;
 			object-fit: contain;

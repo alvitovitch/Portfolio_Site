@@ -10,6 +10,28 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+		<script type="text/javascript">
+		(function() {
+		emailjs.init("user_hsXIUKlejWEeRCifwuorL");
+		})();
+		</script>
+		<script type="text/javascript">
+			window.onload = function() {
+				document.getElementById('contact-form').addEventListener('submit', function(event) {
+					event.preventDefault();
+					// generate a five digit number for the contact_number variable
+					this.contact_number.value = Math.random() * 100000 | 0;
+					// these IDs from the previous steps
+					emailjs.sendForm('service_fpdu5yt', 'template_czyvpii', this)
+						.then(function() {
+							console.log('SUCCESS!');
+						}, function(error) {
+							console.log('FAILED...', error);
+						});
+				});
+			}
+		</script>
 	</head>
 	<body class="right-sidebar is-preload">
 		<div id="page-wrapper">
@@ -54,7 +76,8 @@
 							<p>You know you want to</p>
 						</header>
 							<section class="col-6 col-12-narrower">
-								<form method="post" action="#">
+								<form id="contact-form">
+									<input type="hidden" name="contact_number" >
 									<div class="row gtr-50">
 										<div class="col-6 col-12-mobile">
 											<input name="name" placeholder="Name" type="text" />

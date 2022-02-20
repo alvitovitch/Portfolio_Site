@@ -27,6 +27,8 @@
 					emailjs.sendForm('service_fpdu5yt', 'template_czyvpii', this)
 						.then(function() {
 							console.log('SUCCESS!');
+							const dataForm = document.getElementById('contact-form')
+							dataForm.innerHTML = "<h2>Thanks for reaching out!</h2>"
 						}, function(error) {
 							console.log('FAILED...', error);
 						});
@@ -74,7 +76,7 @@
 					<div id="footer" class="container">
 						<header class="major">
 							<h2>Hit me up</h2>
-							<p>You know you want to</p>
+							<p>I'll get back ASAP</p>
 						</header>
 							<section class="col-6 col-12-narrower">
 								<form id="contact-form">

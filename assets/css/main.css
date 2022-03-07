@@ -2089,10 +2089,8 @@ input, select, textarea {
 
 	#resume {
 		transition: .2s;
-		background-image: rgba(0,0,0,0);
-		filter: drop-shadow(rgb(35, 70, 73) 14px 6px 4px);
-
-		
+		background-image: rgb(255, 255, 255);
+		filter: drop-shadow(rgba(35, 70, 73, .3) 14px 6px 4px);		
 	}
 	
 	#resume:hover{
@@ -2124,6 +2122,7 @@ input, select, textarea {
 			width: 100%;
     		border-radius: 50px;
 			filter: drop-shadow(30px 10px 4px #4444);
+
 		}
 
 		#aboutFlex {

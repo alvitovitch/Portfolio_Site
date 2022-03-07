@@ -2084,6 +2084,20 @@ input, select, textarea {
 
 	#skills i {
 		font-size: 72px;
+		filter: drop-shadow(rgba(3, 40, 44, 0.267) 14px 6px 4px);
+	}
+
+	#resume {
+		transition: .2s;
+		background-image: rgba(0,0,0,0);
+		filter: drop-shadow(rgb(35, 70, 73) 14px 6px 4px);
+
+		
+	}
+	
+	#resume:hover{
+		filter: drop-shadow(rgba(255, 185, 7, 0.542) 0px 0px 4px);
+		background-color: white;
 	}
 
 	.image-wrapper {
@@ -2106,9 +2120,10 @@ input, select, textarea {
 			background: #f6f8fb url("images/image-wrapper.svg");
 		}
 
-		#coffee {
+		#smile {
 			width: 100%;
     		border-radius: 50px;
+			filter: drop-shadow(30px 10px 4px #4444);
 		}
 
 		#aboutFlex {
@@ -2116,7 +2131,7 @@ input, select, textarea {
 			flex-direction: row;
 			align-items: center;
 			width: 100%;
-			gap: 15%;
+			gap: 5%;
 		}
 
 	#header-wrapper {
@@ -2361,7 +2376,7 @@ input, select, textarea {
 			content: 'Problem Solver';
 		}
 		80%{
-			content: 'Icon';
+			content: 'Innovator';
 		}
 		100%{
 			content: 'Programmer';
